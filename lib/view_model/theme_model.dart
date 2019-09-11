@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_android/config/storage_manager.dart';
 import 'package:fun_android/generated/i18n.dart';
-import 'package:fun_android/ui/theme_helper.dart';
+import 'package:fun_android/ui/helper/theme_helper.dart';
 
 class ThemeModel with ChangeNotifier {
   static const kThemeColorIndex = 'kThemeColorIndex';
@@ -25,7 +25,7 @@ class ThemeModel with ChangeNotifier {
   int _fontIndex;
 
   ThemeModel() {
-    ///明暗模式
+    ///明暗模式，0为dark，1为light
     _brightness =
         Brightness.values[StorageManager.sharedPreference.getInt(kThemeBrightnessIndex) ?? 0];
 
