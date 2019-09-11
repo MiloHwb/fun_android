@@ -14,10 +14,12 @@ description: Fun Android
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:
+    sdk: flutter
+  flutter_localizations:
     sdk: flutter
 
   # The following adds the Cupertino Icons font to your application.
@@ -33,6 +35,8 @@ dependencies:
   oktoast: ^2.2.0
   #https://pub.dev/packages/provider
   provider: ^3.1.0
+  #https://pub.dev/packages/dio
+  dio: ^2.1.16
 
 dev_dependencies:
   flutter_test:
