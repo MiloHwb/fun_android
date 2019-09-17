@@ -24,6 +24,11 @@ class S implements WidgetsLocalizations {
   String get autoBySystem => "Auto";
   String get fontKuaiLe => "ZCOOL KuaiLe";
   String get splashSkip => "Skip";
+  String get tabHome => "Home";
+  String get tabProject => "Project";
+  String get tabStructure => "Structure";
+  String get tabUser => "Me";
+  String get wechatAccount => "Wechat";
 }
 
 class $en extends S {
@@ -37,11 +42,21 @@ class $zh_CN extends S {
   TextDirection get textDirection => TextDirection.ltr;
 
   @override
+  String get wechatAccount => "公众号";
+  @override
   String get splashSkip => "跳过";
+  @override
+  String get tabHome => "首页";
+  @override
+  String get tabProject => "项目";
+  @override
+  String get tabUser => "我的";
   @override
   String get fontKuaiLe => "快乐字体";
   @override
   String get autoBySystem => "跟随系统";
+  @override
+  String get tabStructure => "体系";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {

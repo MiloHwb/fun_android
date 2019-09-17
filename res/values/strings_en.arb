@@ -1,5 +1,10 @@
 {
   "autoBySystem": "Auto",
   "fontKuaiLe": "ZCOOL KuaiLe",
-  "splashSkip": "Skip"
+  "splashSkip": "Skip",
+  "tabHome": "Home",
+  "tabProject": "Project",
+  "wechatAccount": "Wechat",
+  "tabStructure": "Structure",
+  "tabUser": "Me"
 }
