@@ -23,6 +23,7 @@ class S implements WidgetsLocalizations {
 
   String get autoBySystem => "Auto";
   String get fontKuaiLe => "ZCOOL KuaiLe";
+  String get splashSkip => "Skip";
 }
 
 class $en extends S {
@@ -35,6 +36,8 @@ class $zh_CN extends S {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
+  @override
+  String get splashSkip => "跳过";
   @override
   String get fontKuaiLe => "快乐字体";
   @override
