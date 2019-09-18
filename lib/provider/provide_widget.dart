@@ -71,9 +71,35 @@ class ProviderWidget2<A extends ChangeNotifier, B extends ChangeNotifier> extend
 
 class _ProviderWidget2State<A extends ChangeNotifier, B extends ChangeNotifier>
     extends State<ProviderWidget2<A, B>> {
+  A model1;
+  B model2;
+
+  @override
+  void initState() {
+    model1 = widget.model1;
+    model2 = widget.model2;
+
+    if (widget.onModelReady != null) {
+      widget.onModelReady(model1, model2);
+    }
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return null;
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<A>(
+          builder: (context) => model1,
+        ),
+        ChangeNotifierProvider<B>(
+          builder: (context) => model2,
+        ),
+      ],
+      child: Consumer2<A, B>(
+        builder: widget.builder,
+        child: widget.child,
+      ),
+    );
   }
 }
