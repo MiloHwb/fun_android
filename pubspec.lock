@@ -30,7 +30,7 @@ packages:
     source: hosted
     version: "1.14.11"
   cookie_jar:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: cookie_jar
       url: "https://pub.flutter-io.cn"
@@ -43,6 +43,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.1.2"
+  device_info:
+    dependency: "direct main"
+    description:
+      name: device_info
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.4.0+2"
   dio:
     dependency: "direct main"
     description:
@@ -100,6 +107,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.2.0"
+  package_info:
+    dependency: "direct main"
+    description:
+      name: package_info
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.4.0+6"
   path:
     dependency: transitive
     description:
